@@ -9,7 +9,9 @@ return {
       picker = {
         sources = {
           explorer = {
-            layout = { preset = "telescope", preview = false },
+            -- reverse = false: keep the tree top-down like the old sidebar
+            -- (the "telescope" preset defaults to bottom-up results)
+            layout = { preset = "telescope", preview = false, reverse = false },
             jump = { close = true },
           },
         },
